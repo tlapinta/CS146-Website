@@ -1,8 +1,16 @@
+/*--Main Page--*/
 body {
     margin: 0;
     background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+/*--Main Page--*/
+
+/*--Header Links--*/
 header {
     background: linear-gradient(to bottom, #800080, #4B0082);
     padding: 10px;
@@ -36,12 +44,9 @@ nav a:hover {
 nav a:active {
     color: gray;
 }
+/*--Header Links--*/
 
-.container {
-    width: 80%;
-    margin: auto;
-}
-
+/*--About Us Section--*/
 .welcome {
     background-color: #ccc;
     padding: 20px;
@@ -51,27 +56,25 @@ nav a:active {
     text-align: center;
 }
 
+.welcome h1{
+    margin-bottom: 20px;
+    color: #800080;
+    font-weight: bold;
+}
+
+.welcome p{
+    font-family: 'cursive', cursive ;
+    font-size: 25px;
+}
+/*--About Us Section--*/
+
+/*--Ingredients Section--*/
 .ingredients {
     background-color: #ccc;
     padding: 20px;
     margin-top: 20px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px black;
-}
-
-.build{
-    background-color: #ccc;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px black;
-}
-
-.welcome h1{
-    margin-bottom: 20px;
-    color: #800080;
-    font-weight: bold;
 }
 
 .ingredients h2{
@@ -81,17 +84,6 @@ nav a:active {
     text-align: left;
 }
 
-.build h2{
-    margin-bottom: 10px;
-    color: #800080;
-    font-weight: bold;
-}
-
-.welcome p{
-    font-family: 'cursive', cursive ;
-    font-size: 25px;
-}
-
 .ingredients p{
     font-family: 'cursive', cursive ;
     font-size: 20px;
@@ -99,12 +91,30 @@ nav a:active {
     align-items: flex-start;
 }
 
-.build p{
-    font-family: 'cursive', cursive ;
-    font-size: 20px;
-}
-
 .im {
     float: right;
     margin-left: 10px;
 }
+/*--Ingredients Section--*/
+
+/*--Build Your Sandwich Section--*/
+.build{
+    background-color: #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px black;
+}
+
+.build h2{
+    margin-bottom: 10px;
+    color: #800080;
+    font-weight: bold;
+}
+
+.build p{
+    font-family: 'cursive', cursive ;
+    font-size: 20px;
+}
+/*--Build Your Sandwich Section--*/
