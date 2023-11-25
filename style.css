@@ -10,11 +10,13 @@ header {
 
 .links {
     color: white;
+    position: relative;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    width: 50%;
 }
 
 nav li {
@@ -37,7 +39,7 @@ nav a:active {
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .welcome {
@@ -94,7 +96,7 @@ nav a:active {
     font-family: 'cursive', cursive ;
     font-size: 20px;
     display: flex;
-    align-items: flext-start;
+    align-items: flex-start;
 }
 
 .build p{
