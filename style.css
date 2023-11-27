@@ -118,3 +118,58 @@ nav a:active {
     font-size: 20px;
 }
 /*--Build Your Sandwich Section--*/
+
+/*sandwich page*/
+@media screen and (max-width: 600px){
+.headerSand {
+    width: 100%;
+}
+}
+.headerSand {
+    display: flex;
+	/*grid-template-columns: 35% 30% 35%;
+	text-align: center;*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #4B0082;
+}
+
+.h1sand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chosenIng {
+    float: left;
+    width: 33%;
+    margin-left: 2%;
+}
+
+.arrow {
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+}
+
+.finalSandwich {
+    float: left;
+    width: 33%;
+    margin-right: 2%;
+}
+
+.resarrow {
+    width: 100%;
+    height: auto;
+    transform: rotate(-90deg);
+}
+
+.ressand {
+    width: 100%;
+    height: auto;
+}
+.ingimgs{
+    width: 50%;
+    height: auto;
+}
