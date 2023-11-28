@@ -1,54 +1,100 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+body {
+        margin: 0;
+        background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
 }
 
-.wrapper{
- width: 50%;
-height: 50vh;
-display: flex;
-justify-content: center;
-align-items: center;
+ .image {
+        position: relative; /* Add this line to position the image container */
+        width: 100px;
 }
 
-.image {
-    width: 500px;
-    position: relative;
+.image__img {
+        display: block;
+        width: 20%; /* Adjust the width to your desired size */
+        height: auto; /* Let the height adjust proportionally to the width */
 }
 
-img{
-    width: 60%;
+ .image__overlay {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        width: 10%; /* Adjust the width as needed */
+        height: 10%; /* Adjust the height as needed */
+        background: rgba(0, 0, 0, 0); /* Adjust the alpha value for the background color */
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        text-decoration: underline;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.25s;
+        opacity: 0; /* Start with 0 opacity to hide the overlay initially */
+}
+    
+.image__title {
+        font-size: larger;
+        font-weight: bolder;
+        color: red;
+}
+
+ .image__overlay:hover {
+        opacity: 1;
+}
+.image__description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+#_________________________________________________________________________
+
+.tomato_image {
+    position: relative; /* Add this line to position the image container */
+    width: 100%;
+}
+
+.image__tomato__img {
     display: block;
-    margin:auto;
+    width: 20%; /* Adjust the width to your desired size */
+    height: auto; /* Let the height adjust proportionally to the width */
 }
 
-.content{
-    width:100%;
-    height: 100%;
-    top:0;
-    Left: 0;
+.image__tomato_overlay {
     position: absolute;
-    background:rgba(0,0,0,0.6);
+    top: 68%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 10%; /* Adjust the width as needed */
+    height: 10%; /* Adjust the height as needed */
+    background: rgba(0, 0, 0, 0); /* Adjust the alpha value for the background color */
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-decoration: underline;
+    font-weight: bolder;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
-
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+    opacity: 0; /* Start with 0 opacity to hide the overlay initially */
 }
-.content:hover{
+
+.image__tomato_title {
+    font-size: larger;
+    font-weight: bolder;
+    color: red;
+}
+
+.image__tomato_overlay:hover {
     opacity: 1;
 }
 
-.content h3{
-    font-size: 45px;
-    color:aquamarine;
-    margin-bottom: 15px;
+.image__tomato_description{
+    font-size: .95em;
+    margin-top: 0.25em;
 }
-
-.content > *{
-    transform: translateY(0px);
-}
+#_________________________________________________________________________
