@@ -132,7 +132,6 @@ nav a:active {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: #4B0082;
 }
 
 .h1sand{
@@ -153,10 +152,14 @@ nav a:active {
     margin-right: 5%;
 }
 
-.finalSandwich {
+.finalSandwich{
     float: left;
     width: 33%;
     margin-right: 2%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 6px;
+    box-shadow: 2px 2px 24px #000;
 }
 
 .resarrow {
@@ -165,11 +168,23 @@ nav a:active {
     transform: rotate(-90deg);
 }
 
-.ressand {
+#transformedImage1 {
+    width: 20%;
+    height: auto;
+    display: none;
+}
+
+#transformedImage2 {
     width: 100%;
     height: auto;
+    display: none;
 }
+
 .ingimgs{
     width: 50%;
     height: auto;
+}
+
+#image1{
+    border-radius: 25px;
 }

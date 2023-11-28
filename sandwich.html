@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Your Sandwich</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="links">
@@ -23,8 +24,10 @@
         <div class="chosenIng">
             <h2>Your Chosen Ingredients</h2>
             <ul>
-                <li>Sourdough Bread</li>
-                <img src="images/sourdough.gif" alt="Sourdough" class="ingimgs">
+                <div ondrop="drop(event, 'image1')" ondragover="allowDrop(event)">
+                    <li>Sourdough Bread</li>
+                    <img src="images/sourdough.gif" alt="Sourdough" class="ingimgs" id="image1" draggable="true" ondragstart="drag(event)"/>
+                </div>
                 <li>Avocado</li>
                 <img src="images/avocado.webp" alt="Avocado" class="ingimgs">
                 <li>Fresh Spinach</li>
@@ -32,9 +35,11 @@
                 <li>Grilled Chicken</li>
                 <img src="images/grilledChicken.jpeg" alt="Grilled Chicken" class="ingimgs">
                 <li>Sriracha Mayo</li>
-                <img src="images/srirachaMayo.jpeg" alt="Sriracha" class="ingimgs">
-                <li>Tomato</li>
-                <img src="images/tomato.jpeg" alt="Tomato" class="ingimgs">
+                <img src="images/srirachaMayo.png" alt="Sriracha" class="ingimgs">
+                <div ondrop="drop(event,'image2')" ondragover="allowDrop(event)">
+                    <li>Tomato</li>
+                    <img src="images/tomato.png" alt="Tomato" class="ingimgs" id="image2" draggable="true" ondragstart="drag(event)">
+                </div>
             </ul>
         </div>
         <!-- <br> -->
@@ -42,8 +47,14 @@
             <img src="images/arrowDown.png" alt="Downward Arrow" class = "resarrow">
         </div>
         <!-- <br> -->
-        <div class="finalSandwich">
-            <img src="images/exampleSandwich.png" alt="Assembled Sandwich" class = "ressand">
+        <div class="finalSandwich" ondrop="drop(event, 'image1')" ondragover="allowDrop(event)">
+            <div id = "transformedImage1">
+                <img src="images/sourdough_slice.png" alt="Assembled Sandwich">
+            <img src="images/sourdough_slice.png" alt="Assembled Sandwich">
+            </div>
+        </div>
+        <div class="finalSandwich" ondrop="drop(event, 'image2')" ondragover="allowDrop(event)"> 
+            <img src="images/tomato_slice.png" alt="Assembled Sandwich" id = "transformedImage2">
         </div>
     </div>
 </body>
