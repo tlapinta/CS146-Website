@@ -1,4 +1,4 @@
-/*--Main Page--*/
+/*--General Page Design--*/
 body {
     margin: 0;
     background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
@@ -8,11 +8,10 @@ body {
     width: 80%;
     margin: auto;
 }
-/*--Main Page--*/
 
-/*--Header Links--*/
 header {
     background: linear-gradient(to bottom, #800080, #4B0082);
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -44,7 +43,9 @@ nav a:hover {
 nav a:active {
     color: gray;
 }
-/*--Header Links--*/
+/*--General Page Design--*/
+
+/********************************* Home Page Content ********************************/
 
 /*--About Us Section--*/
 .welcome {
@@ -119,7 +120,9 @@ nav a:active {
 }
 /*--Build Your Sandwich Section--*/
 
-/*sandwich page*/
+/********************************* Home Page Content ********************************/
+
+/******************************** Sandwich Page Content *******************************/
 @media screen and (max-width: 600px){
 .headerSand {
     width: 100%;
@@ -188,3 +191,66 @@ nav a:active {
 #image1{
     border-radius: 25px;
 }
+/******************************** Sandwich Page Content *******************************/
+
+/******************************** Ingredients Page Content ******************************/
+.imageCon {
+    display: flex;
+    padding: 20px;
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.imageCon h1{
+    width: 100%;
+    margin-bottom: 20px;
+    color: #800080;
+    font-weight: bold;
+
+}
+
+.imageCon p{
+    font-family: 'cursive', cursive ;
+    font-size: 25px;
+    text-align: center;;
+}
+
+.imageCon img {
+    width: 100%; 
+    height: 100%; 
+}
+
+figure {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-right: 26px;
+    margin-left: 26px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.imageCon figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.imageCon figure:hover figcaption{
+    opacity: 1;
+}
+/******************************** Ingredients Page Content ******************************/
