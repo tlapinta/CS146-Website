@@ -1,256 +1,776 @@
-/*--General Page Design--*/
-body {
-    margin: 0;
-    background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
-}
+/* Desktop View */
+@media only screen and (min-width: 769px){
+    /*--General Page Design--*/
+    body {
+        margin: 0;
+        background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
+    header {
+        background: linear-gradient(to bottom, #800080, #4B0082);
+        margin-bottom: 20px;
+        padding: 10px;
+    }
 
-header {
-    background: linear-gradient(to bottom, #800080, #4B0082);
-    margin-bottom: 20px;
-    padding: 10px;
-}
+    .links {
+        color: white;
+        position: relative;
+    }
 
-.links {
-    color: white;
-    position: relative;
-}
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 50%;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    width: 50%;
-}
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
+    nav a {
+        text-decoration: none;
+        color: white; 
+    }
 
-nav a {
-    text-decoration: none;
-    color: white; 
-}
+    nav a:hover {
+        color: lightgray;
+    }
 
-nav a:hover {
-    color: lightgray;
-}
+    nav a:active {
+        color: gray;
+    }
+    /*--General Page Design--*/
+    
+    /********************************* Home Page Content ********************************/
 
-nav a:active {
-    color: gray;
-}
-/*--General Page Design--*/
+    /*--About Us Section--*/
+    .welcome {
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+    }
 
-/********************************* Home Page Content ********************************/
+    .welcome h1{
+        margin-bottom: 20px;
+        color: #800080;
+        font-weight: bold;
+    }
 
-/*--About Us Section--*/
-.welcome {
-    background-color: #ccc;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px black;
-    text-align: center;
-}
+    .welcome p{
+        font-family: 'cursive', cursive ;
+        font-size: 25px;
+    }
+    /*--About Us Section--*/
 
-.welcome h1{
-    margin-bottom: 20px;
-    color: #800080;
-    font-weight: bold;
-}
+    /*--Ingredients Section--*/
+    .ingredients {
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+    }
 
-.welcome p{
-    font-family: 'cursive', cursive ;
-    font-size: 25px;
-}
-/*--About Us Section--*/
+    .ingredients h2{
+        margin-bottom: 10px;
+        color: #800080;
+        font-weight: bold;
+        text-align: left;
+    }
 
-/*--Ingredients Section--*/
-.ingredients {
-    background-color: #ccc;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px black;
-}
+    .ingredients p{
+        font-family: 'cursive', cursive ;
+        font-size: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
 
-.ingredients h2{
-    margin-bottom: 10px;
-    color: #800080;
-    font-weight: bold;
-    text-align: left;
-}
+    .im {
+        float: right;
+        margin-left: 10px;
+    }
+    /*--Ingredients Section--*/
 
-.ingredients p{
-    font-family: 'cursive', cursive ;
-    font-size: 20px;
-    display: flex;
-    align-items: flex-start;
-}
+    /*--Build Your Sandwich Section--*/
+    .build{
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+    }
 
-.im {
-    float: right;
-    margin-left: 10px;
-}
-/*--Ingredients Section--*/
+    .build h2{
+        margin-bottom: 10px;
+        color: #800080;
+        font-weight: bold;
+    }
 
-/*--Build Your Sandwich Section--*/
-.build{
-    background-color: #ccc;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px black;
-}
+    .build p{
+        font-family: 'cursive', cursive ;
+        font-size: 20px;
+    }
+    /*--Build Your Sandwich Section--*/
 
-.build h2{
-    margin-bottom: 10px;
-    color: #800080;
-    font-weight: bold;
-}
+    /********************************* Home Page Content ********************************/
 
-.build p{
-    font-family: 'cursive', cursive ;
-    font-size: 20px;
-}
-/*--Build Your Sandwich Section--*/
+    /******************************** Sandwich Page Content *******************************/
+    .headerSand {
+        display: flex;
+        /*grid-template-columns: 35% 30% 35%;
+        text-align: center;*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 
-/********************************* Home Page Content ********************************/
+    .h1sand{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-/******************************** Sandwich Page Content *******************************/
-@media screen and (max-width: 600px){
-.headerSand {
-    width: 100%;
-}
-}
-.headerSand {
-    display: flex;
-	/*grid-template-columns: 35% 30% 35%;
-	text-align: center;*/
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
+    .chosenIng {
+        float: left;
+        width: 33%;
+        margin-left: 2%;
+    }
 
-.h1sand{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .arrow {
+        float: left;
+        width: 25%;
+        margin-right: 5%;
+    }
 
-.chosenIng {
-    float: left;
-    width: 33%;
-    margin-left: 2%;
-}
+    .finalSandwich{
+        float: left;
+        width: 33%;
+        margin-right: 2%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 6px;
+        box-shadow: 2px 2px 24px #000;
+    }
 
-.arrow {
-    float: left;
-    width: 25%;
-    margin-right: 5%;
-}
+    .resarrow {
+        width: 100%;
+        height: auto;
+        transform: rotate(-90deg);
+    }
 
-.finalSandwich{
-    float: left;
-    width: 33%;
-    margin-right: 2%;
-    background: #fff;
-    border-radius: 6px;
-    padding: 6px;
-    box-shadow: 2px 2px 24px #000;
-}
+    #transformedImage1 {
+        width: 20%;
+        height: auto;
+        display: none;
+    }
 
-.resarrow {
-    width: 100%;
-    height: auto;
-    transform: rotate(-90deg);
-}
+    #transformedImage2 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
 
-#transformedImage1 {
-    width: 20%;
-    height: auto;
-    display: none;
-}
+    .ingimgs{
+        width: 50%;
+        height: auto;
+    }
 
-#transformedImage2 {
-    width: 100%;
-    height: auto;
-    display: none;
-}
+    #image1{
+        border-radius: 25px;
+    }
+    /******************************** Sandwich Page Content *******************************/
 
-.ingimgs{
-    width: 50%;
-    height: auto;
-}
+    /******************************** Ingredients Page Content ******************************/
+    .imageCon {
+        display: flex;
+        padding: 20px;
+        width: 80%;
+        margin-top: 20px;
+        margin: auto;
+        flex-wrap: wrap;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+        justify-content: space-between;
+    }
 
-#image1{
-    border-radius: 25px;
-}
-/******************************** Sandwich Page Content *******************************/
+    .imageCon h1{
+        width: 100%;
+        margin-bottom: 20px;
+        color: #800080;
+        font-weight: bold;
 
-/******************************** Ingredients Page Content ******************************/
-.imageCon {
-    display: flex;
-    padding: 20px;
-    width: 80%;
-    margin-top: 20px;
-    margin: auto;
-    flex-wrap: wrap;
-    background-color: #ccc;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px black;
-    text-align: center;
-    justify-content: space-between;
-}
+    }
 
-.imageCon h1{
-    width: 100%;
-    margin-bottom: 20px;
-    color: #800080;
-    font-weight: bold;
+    .imageCon p{
+        font-family: 'cursive', cursive ;
+        font-size: 25px;
+        text-align: center;;
+    }
 
-}
+    .imageCon img {
+        width: 100%; 
+        height: 100%; 
+    }
 
-.imageCon p{
-    font-family: 'cursive', cursive ;
-    font-size: 25px;
-    text-align: center;;
-}
+    figure {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-right: 26px;
+        margin-left: 26px;
+        margin-bottom: 20px;
+        float: left;
+    }
 
-.imageCon img {
-    width: 100%; 
-    height: 100%; 
-}
+    .imageCon figcaption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        transition: opacity 0.3s ease;
+    }
 
-figure {
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    margin-right: 26px;
-    margin-left: 26px;
-    margin-bottom: 20px;
-    float: left;
+    .imageCon figure:hover figcaption{
+        opacity: 1;
+    }
+    /******************************** Ingredients Page Content ******************************/
 }
+/* Desktop View */
 
-.imageCon figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 150%);
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    transition: opacity 0.3s ease;
-}
 
-.imageCon figure:hover figcaption{
-    opacity: 1;
+
+
+/*Tablet View */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    /*--General Page Design--*/
+    body {
+        margin: 0;
+        background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        background: linear-gradient(to bottom, #800080, #4B0082);
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .links {
+        color: white;
+        position: relative;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white; 
+    }
+
+    nav a:hover {
+        color: lightgray;
+    }
+
+    nav a:active {
+        color: gray;
+    }
+    /*--General Page Design--*/
+
+    /********************************* Home Page Content ********************************/
+
+    /*--About Us Section--*/
+    .welcome {
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+    }
+
+    .welcome h1{
+        margin-bottom: 13px;
+        color: #800080;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .welcome p{
+        font-family: 'cursive', cursive ;
+        font-size: 12px;
+    }
+    /*--About Us Section--*/
+
+    /*--Ingredients Section--*/
+    .ingredients {
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    .ingredients h2{
+        margin-bottom: 10px;
+        color: #800080;
+        font-weight: bold;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .ingredients p{
+        font-family: 'cursive', cursive ;
+        font-size: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .im {
+        float: right;
+        margin-left: 7px;
+    }
+    /*--Ingredients Section--*/
+
+    /*--Build Your Sandwich Section--*/
+    .build{
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    .build h2{
+        margin-bottom: 7px;
+        color: #800080;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .build p{
+        font-family: 'cursive', cursive ;
+        font-size: 10px;
+    }
+    /*--Build Your Sandwich Section--*/
+
+    /********************************* Home Page Content ********************************/
+
+    /******************************** Sandwich Page Content *******************************/
+    .headerSand {
+        display: flex;
+        /*grid-template-columns: 35% 30% 35%;
+        text-align: center;*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1sand{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chosenIng {
+        float: left;
+        width: 33%;
+        margin-left: 2%;
+    }
+
+    .arrow {
+        float: left;
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    .finalSandwich{
+        float: left;
+        width: 33%;
+        margin-right: 2%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 6px;
+        box-shadow: 2px 2px 24px #000;
+    }
+
+    .resarrow {
+        width: 100%;
+        height: auto;
+        transform: rotate(-90deg);
+    }
+
+    #transformedImage1 {
+        width: 20%;
+        height: auto;
+        display: none;
+    }
+
+    #transformedImage2 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .ingimgs{
+        width: 50%;
+        height: auto;
+    }
+
+    #image1{
+        border-radius: 25px;
+    }
+    /******************************** Sandwich Page Content *******************************/
+
+    /******************************** Ingredients Page Content ******************************/
+    .imageCon {
+        display: flex;
+        padding: 20px;
+        width: 80%;
+        margin-top: 20px;
+        margin: auto;
+        flex-wrap: wrap;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .imageCon h1{
+        width: 100%;
+        margin-bottom: 20px;
+        color: #800080;
+        font-weight: bold;
+
+    }
+
+    .imageCon p{
+        font-family: 'cursive', cursive ;
+        font-size: 25px;
+        text-align: center;;
+    }
+
+    .imageCon img {
+        width: 100%; 
+        height: 100%; 
+    }
+
+    figure {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-right: 26px;
+        margin-left: 26px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .imageCon figcaption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .imageCon figure:hover figcaption{
+        opacity: 1;
+    }
+    /******************************** Ingredients Page Content ******************************/
 }
-/******************************** Ingredients Page Content ******************************/
+/* Tablet View*/
+
+
+
+/*Phone View*/
+@media only screen and (max-width: 480px){
+    /*--General Page Design--*/
+    body {
+        margin: 0;
+        background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        background: linear-gradient(to bottom, #800080, #4B0082);
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .links {
+        color: white;
+        position: relative;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+        text-decoration: none;
+        color: white; 
+    }
+
+    nav a:hover {
+        color: lightgray;
+    }
+
+    nav a:active {
+        color: gray;
+    }
+    /*--General Page Design--*/
+
+    /********************************* Home Page Content ********************************/
+
+    /*--About Us Section--*/
+    .welcome {
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+    }
+
+    .welcome h1{
+        margin-bottom: 20px;
+        color: #800080;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .welcome p{
+        font-family: 'cursive', cursive ;
+        font-size: 9px;
+    }
+    /*--About Us Section--*/
+
+    /*--Ingredients Section--*/
+    .ingredients {
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    .ingredients h2{
+        margin-bottom: 10px;
+        color: #800080;
+        font-weight: bold;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .ingredients p{
+        font-family: 'cursive', cursive ;
+        font-size: 8px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .im {
+        float: right;
+        margin-left: 10px;
+    }
+    /*--Ingredients Section--*/
+
+    /*--Build Your Sandwich Section--*/
+    .build{
+        background-color: #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    .build h2{
+        margin-bottom: 10px;
+        color: #800080;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .build p{
+        font-family: 'cursive', cursive ;
+        font-size: 8px;
+    }
+    /*--Build Your Sandwich Section--*/
+
+    /********************************* Home Page Content ********************************/
+
+    /******************************** Sandwich Page Content *******************************/
+    .headerSand {
+        display: flex;
+        /*grid-template-columns: 35% 30% 35%;
+        text-align: center;*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1sand{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chosenIng {
+        float: left;
+        width: 33%;
+        margin-left: 2%;
+    }
+
+    .arrow {
+        float: left;
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    .finalSandwich{
+        float: left;
+        width: 33%;
+        margin-right: 2%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 6px;
+        box-shadow: 2px 2px 24px #000;
+    }
+
+    .resarrow {
+        width: 100%;
+        height: auto;
+        transform: rotate(-90deg);
+    }
+
+    #transformedImage1 {
+        width: 20%;
+        height: auto;
+        display: none;
+    }
+
+    #transformedImage2 {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .ingimgs{
+        width: 50%;
+        height: auto;
+    }
+
+    #image1{
+        border-radius: 25px;
+    }
+    /******************************** Sandwich Page Content *******************************/
+
+    /******************************** Ingredients Page Content ******************************/
+    .imageCon {
+        display: flex;
+        padding: 20px;
+        width: 80%;
+        margin-top: 20px;
+        margin: auto;
+        flex-wrap: wrap;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px black;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .imageCon h1{
+        width: 100%;
+        margin-bottom: 20px;
+        color: #800080;
+        font-weight: bold;
+
+    }
+
+    .imageCon p{
+        font-family: 'cursive', cursive ;
+        font-size: 25px;
+        text-align: center;;
+    }
+
+    .imageCon img {
+        width: 100%; 
+        height: 100%; 
+    }
+
+    figure {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-right: 26px;
+        margin-left: 26px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .imageCon figcaption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .imageCon figure:hover figcaption{
+        opacity: 1;
+    }
+    /******************************** Ingredients Page Content ******************************/
+}
+/*Phone View*/
