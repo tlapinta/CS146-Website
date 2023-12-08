@@ -4,7 +4,7 @@
     body {
         margin: 0;
         height: auto;
-        background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
+        background: #b3e0f7
     }
     .container {
         width: 90%;
@@ -98,8 +98,11 @@
     }
 
     .im {
+        margin-top: 25px;
         float: right;
         margin-left: 10px;
+        width: 30%;
+        height: auto;
     }
     /*--Ingredients Section--*/
 
@@ -211,7 +214,7 @@
 
     .imageCon h1{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         color: #800080;
         font-weight: bold;
         font-size: 18px;
@@ -221,7 +224,14 @@
     .imageCon p{
         font-family: 'cursive', cursive ;
         font-size: 9px;
-        text-align: center;;
+    }
+
+    .imageCon p.description{
+        margin-bottom: 20px;
+    }
+
+    .imageCon p.bacon{
+        font-size: 8px;
     }
 
     .imageCon img {
@@ -235,8 +245,9 @@
         margin: auto;
         margin-right: 10px;
         margin-left: 10px;
-        margin-bottom: 7px;
+        margin-bottom: 15px;
         float: left;
+        position: relative;
     }
 
     .imageCon figcaption {
@@ -248,8 +259,9 @@
         background-color: rgba(0, 0, 0, 0.8);
         color: #fff;
         padding: 10px;
-        text-align: center;
         transition: opacity 0.3s ease;
+        width: 80px;
+        height: 80px;
     }
 
     .imageCon figure:hover figcaption{
@@ -258,3 +270,4 @@
     /******************************** Ingredients Page Content ******************************/
 }
 /*Phone View*/
+
