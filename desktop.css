@@ -3,7 +3,7 @@
     /*--General Page Design--*/
     body {
         margin: 0;
-        background: linear-gradient(to bottom, #81d4fa, #b3e0f7);  
+        background: #b3e0f7
     }
     .container {
         width: 80%;
