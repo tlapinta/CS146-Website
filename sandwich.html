@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)">
         <link rel="stylesheet" href="tablet.css" media="screen and (min-width:481px) and (max-width: 768px)">
         <link rel="stylesheet" href="desktop.css" media="screen and (min-width:769px)">
-        <script src="script.js"></script>
     </head>
 <body>
     <div class="links">
@@ -24,24 +23,62 @@
     <h1 class = "h1sand">Create Your Sandwich</h1>
     <div class="headerSand">
         <div class="chosenIng">
-            <h2>Your Chosen Ingredients</h2>
+            <h2>Your Ingredients</h2>
             <ul>
-                <div ondrop="drop(event, 'image1')" ondragover="allowDrop(event)">
-                    <li>Sourdough Bread</li>
-                    <img src="images/sourdough.gif" alt="Sourdough" class="ingimgs" id="image1" draggable="true" ondragstart="drag(event)"/>
+                <div class = ingAlign>
+                <div>
+                <li>Wheat Bread</li>
+                <div draggable="true" ondragstart="drag(event, 'images/WheatBreadImage.png')">
+                    <img src="images/WheatBreadImage.png" alt="Wheat Bread" class="ingimgs">
                 </div>
                 <li>Avocado</li>
-                <img src="images/avocado.webp" alt="Avocado" class="ingimgs">
-                <li>Fresh Spinach</li>
-                <img src="images/spinach.jpeg" alt="Spinach" class="ingimgs">
-                <li>Grilled Chicken</li>
-                <img src="images/grilledChicken.jpeg" alt="Grilled Chicken" class="ingimgs">
-                <li>Sriracha Mayo</li>
-                <img src="images/srirachaMayo.png" alt="Sriracha" class="ingimgs">
-                <div ondrop="drop(event,'image2')" ondragover="allowDrop(event)">
-                    <li>Tomato</li>
-                    <img src="images/tomato.png" alt="Tomato" class="ingimgs" id="image2" draggable="true" ondragstart="drag(event)">
+                <div draggable="true" ondragstart="drag(event, 'images/AvocadoImage.png')">
+                    <img src="images/AvocadoImage.png" alt="Avocado" class="ingimgs">
                 </div>
+                <li>Fresh Lettuce</li>
+                <div draggable="true" ondragstart="drag(event, 'images/LettuceImage.png')">
+                    <img src="images/LettuceImage.png" alt="Lettuce" class="ingimgs">
+                </div>
+                <li>Grilled Chicken</li>
+                <div draggable="true" ondragstart="drag(event, 'images/grilledChicken.jpeg')">
+                    <img src="images/grilledChicken.jpeg" alt="Grilled Chicken" class="ingimgs">
+                </div>
+                <li>Sriracha Mayo</li>
+                <div draggable="true" ondragstart="drag(event, 'images/SirachaMayoImage.png')">
+                    <img src="images/SirachaMayoImage.png" alt="Sriracha Mayo" class="ingimgs">
+                </div>
+                <li>Tomato</li>
+                <div draggable="true" ondragstart="drag(event, 'images/TomatoImage.png')">
+                    <img src="images/TomatoImage.png" alt="Tomato" class="ingimgs">
+                </div>
+            </div>
+            <div>
+                <li>Rye Bread</li>
+                <div draggable="true" ondragstart="drag(event, 'images/RyeBreadImage.png')">
+                    <img src="images/RyeBreadImage.png" alt="Rye Bread" class="ingimgs"/>
+                </div>
+                <li>Ham</li>
+                <div draggable="true" ondragstart="drag(event, 'images/HamImage.png')">
+                    <img src="images/HamImage.png" alt="Ham" class="ingimgs">
+                </div>
+                <li>Mayo</li>
+                <div draggable="true" ondragstart="drag(event, 'images/MayoImage.png')">
+                    <img src="images/MayoImage.png" alt="Mayo" class="ingimgs">
+                </div>
+                <li>Bacon</li>
+                <div draggable="true" ondragstart="drag(event, 'images/BaconImage.png')">
+                    <img src="images/BaconImage.png" alt="Bacon" class="ingimgs">
+                </div>
+                <li>Swiss Cheese</li>
+                <div draggable="true" ondragstart="drag(event, 'images/SwissCheeseImage.png')">
+                    <img src="images/SwissCheeseImage.png" alt="Swiss Cheese" class="ingimgs">
+                </div>
+                <li>American Cheese</li>
+                <div draggable="true" ondragstart="drag(event, 'images/AmericanCheeseImage.png')">
+                    <img src="images/AmericanCheeseImage.png" alt="American Cheese" class="ingimgs">
+                </div>
+            </div>
+        </div>
             </ul>
         </div>
         <!-- <br> -->
@@ -49,15 +86,11 @@
             <img src="images/arrowDown.png" alt="Downward Arrow" class = "resarrow">
         </div>
         <!-- <br> -->
-        <div class="finalSandwich" ondrop="drop(event, 'image1')" ondragover="allowDrop(event)">
-            <div id = "transformedImage1">
-                <img src="images/sourdough_slice.png" alt="Assembled Sandwich">
-            <img src="images/sourdough_slice.png" alt="Assembled Sandwich">
-            </div>
+        <div id="target-container" class="drop-container" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+            
         </div>
-        <div class="finalSandwich" ondrop="drop(event, 'image2')" ondragover="allowDrop(event)"> 
-            <img src="images/tomato_slice.png" alt="Assembled Sandwich" id = "transformedImage2">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
