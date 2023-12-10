@@ -16,9 +16,7 @@ function drop(event) {
   droppedImage.src = imageUrl;
   droppedImage.classList.add('dropped-image');
 
-  //container.innerHTML = '';
   container.appendChild(droppedImage);
-  // Transform the image once dropped
   transformImage(droppedImage);
 }
 
@@ -65,8 +63,6 @@ function start(imageUrl){
   droppedImage.src = imageUrl;
   droppedImage.classList.add('dropped-image');
 
-  //container.innerHTML = '';
   container.appendChild(droppedImage);
-  // Transform the image once dropped
   transformImage(droppedImage);
 }
