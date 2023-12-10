@@ -170,3 +170,8 @@ function start(imageUrl){
   container.appendChild(droppedImage);
   transformImage(droppedImage);
 }
+
+function resetSandwich(){
+  const container = document.getElementById('target-container');
+  container.innerHTML = '';
+}
