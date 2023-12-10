@@ -188,6 +188,21 @@
         justify-content: center;
 
     }
+
+    /* Adjust styles for tablet reset button */
+    .reset-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 12px 25px; /* Adjust padding for tablet */
+        font-size: 15px; /* Adjust font size for tablet */
+        margin: 8px; 
+    }
+
+    .reset-button:hover {
+        background-color: #45a049;
+    }
+
     /******************************** Sandwich Page Content *******************************/
 
     /******************************** Ingredients Page Content ******************************/
