@@ -171,7 +171,11 @@ function start(imageUrl){
   transformImage(droppedImage);
 }
 
-function resetSandwich(){
+function resetSandwich() {
   const container = document.getElementById('target-container');
-  container.innerHTML = '';
+
+  // Remove all child elements from the container
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
 }
