@@ -6,10 +6,9 @@ function drag(event, imageUrl) {
   event.dataTransfer.setData('text/plain', imageUrl);
 }
 
+
 function drop(event) {
   event.preventDefault();
-  //const words = document.getElementById("target-container");
-  //words.innerHTML = "";
   const container = document.getElementById('target-container');
   const imageUrl = event.dataTransfer.getData('text/plain');
 
@@ -24,8 +23,6 @@ function drop(event) {
 }
 
 function transformImage(image) {
-  // Add your logic to transform the image here
-  // For example, change the source to a different image
   if(image.src.includes("images/WheatBreadImage.png")){
     image.src = 'images/wheatSlice.png';
     image.style.width = "300px";
@@ -59,4 +56,17 @@ function transformImage(image) {
   }else if(image.src.includes("images/AmericanCheeseImage.png")){
     image.src = 'images/americanCheeseSlice.png';
   }
+}
+
+function start(imageUrl){
+  const container = document.getElementById('target-container');
+
+  const droppedImage = document.createElement('img');
+  droppedImage.src = imageUrl;
+  droppedImage.classList.add('dropped-image');
+
+  //container.innerHTML = '';
+  container.appendChild(droppedImage);
+  // Transform the image once dropped
+  transformImage(droppedImage);
 }
