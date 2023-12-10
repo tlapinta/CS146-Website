@@ -191,6 +191,21 @@
         justify-content: center;
 
     }
+
+    
+    .reset-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px; 
+        font-size: 14px; 
+        margin: 5px; 
+    }
+
+    .reset-button:hover {
+        background-color: #45a049;
+    }
+
     /******************************** Sandwich Page Content *******************************/
 
     /******************************** Ingredients Page Content ******************************/
