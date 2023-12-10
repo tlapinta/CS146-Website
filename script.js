@@ -3,21 +3,26 @@ function allowDrop(event) {
 }
 
 function drag(event, imageUrl) {
+  //saves the image we're going to drag so that we know what to drop
   event.dataTransfer.setData('text/plain', imageUrl);
 }
 
-
-
 function drop(event) {
   event.preventDefault();
+  //gets the container that we drop in the items
   const container = document.getElementById('target-container');
+  //gets the data we want to drag
   const imageUrl = event.dataTransfer.getData('text/plain');
 
+  //creates a new image element
   const droppedImage = document.createElement('img');
+  // makes that new element equal to the image we're dragging
   droppedImage.src = imageUrl;
   droppedImage.classList.add('dropped-image');
 
+  //adds that element to the drop-in container 
   container.appendChild(droppedImage);
+  // transforms that element once its dropped in
   transformImage(droppedImage);
 }
 
@@ -27,7 +32,7 @@ function transformImage(image) {
     window.matchMedia('(min-width: 481px) and (max-width: 768px)'),
     window.matchMedia('(min-width: 769px)'),
   ];
-
+  // transforms the images based on what the drop in image is
   if(image.src.includes("images/WheatBreadImage.png")){
     image.src = 'images/wheatSlice.png';
     if (mediaQueries[2].matches){
@@ -152,6 +157,10 @@ function transformImage(image) {
 }
 
 function start(imageUrl){
+  // this is for touch devices
+  // instead of drag, 
+  // once the item is touched its added to the drop in container
+  // and transformed
   const container = document.getElementById('target-container');
 
   const droppedImage = document.createElement('img');
