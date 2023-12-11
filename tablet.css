@@ -171,13 +171,14 @@
     }
 
     .resarrow {
-        width: 100%;
+        width: 90%;
         height: auto;
         transform: rotate(-90deg);
+        margin-left: 25px;
     }
 
     .ingimgs{
-        width: 50%;
+        width: 100%;
         height: auto;
     }
 
@@ -187,6 +188,11 @@
         align-items: center;
         justify-content: center;
 
+    }
+
+    .ingAlign div.row2{
+        margin-left: 25px;
+        margin-right: 35px;
     }
 
     /* Adjust styles for tablet reset button */

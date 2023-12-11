@@ -174,9 +174,10 @@
     }
 
     .resarrow {
-        width: 100%;
+        width: 80%;
         height: auto;
         transform: rotate(-90deg);
+        margin-left: 25px;
     }
 
     .ingimgs{
@@ -192,6 +193,10 @@
 
     }
 
+    .ingAlign div.row2{
+        margin-left: 25px;
+        margin-right: 35px;
+    }
     
     .reset-button {
         background-color: #4CAF50;
