@@ -5,4 +5,6 @@ Our Home provides information about the site and its features
 
 The Ingredients page provides the list of available ingredients and their nutritional facts
 
-The Build Your Sandwich page is the platform where users can build their actual sandwiches
+The Build Your Sandwich page is the platform where users can build their actual sandwiches.
+One the desktop page in order for you image to be added you must see a plus sign when the 
+image is above the container.
